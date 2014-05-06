@@ -1,31 +1,31 @@
 @font-face {
 	font-family: QuattrocentoSans;
-	src: url('../fonts/QuattrocentoSans-Regular.ttf');
+	src: url('../fonts/QuattrocentoSans/QuattrocentoSans-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: QuattrocentoSans;
-	src: url('../fonts/QuattrocentoSans-Bold.ttf');
+	src: url('../fonts/QuattrocentoSans/QuattrocentoSans-Bold.ttf');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: LibreCaslon;
-	src: url('../fonts/LibreCaslonText-Regular.ttf');
+	src: url('../fonts/LibreCaslon/LibreCaslonText-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: LibreCaslon;
-	src: url('../fonts/LibreCaslonText-Bold.ttf');
+	src: url('../fonts/LibreCaslon/LibreCaslonText-Bold.ttf');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: LibreBaskerville;
-	src: url('../fonts/LibreBaskerville-Bold.ttf');
+	src: url('../fonts/LibreBaskerville/LibreBaskerville-Bold.ttf');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -37,7 +37,7 @@ html {
 html,body,nav,header,footer,section,article,div,span,h1,p { margin:0; padding:0; }
 
 body {
-	font-family: 'QuattrocentoSans';
+	font-family: 'QuattrocentoSans', sans-serif;
 	color: #FFFFFF;
 	background-color: #371212;
 }
@@ -56,7 +56,7 @@ header h1 {
 }
 
 header h2 {
-	font-family: 'LibreBaskerville';
+	font-family: 'LibreBaskerville', serif;
 	font-size: 1.3em;
 	margin: 0;
 	padding: 1%;
@@ -122,7 +122,7 @@ section {
 
 section a {
 	text-decoration: none;
-	font-family: 'QuattrocentoSans';
+	font-family: 'QuattrocentoSans', sans-serif;
 	margin: 0 auto;
 	margin-top: 2em;
 	border: 0px solid;
@@ -157,7 +157,7 @@ section a aside {
 }
 
 section a h1 {
-	font-family: 'LibreBaskerville';
+	font-family: 'LibreBaskerville', serif;
 	font-weight: bold;
 	color: #000000;	
 	font-size: 3em;
@@ -175,14 +175,14 @@ section a h1:first-letter {
 section a p {
 	color: white;
 	text-align: justify;
-	font-family: 'LibreCaslon';
+	font-family: 'LibreCaslon', serif;
 	padding: 0% 4.3% 0% 4.3%;
 	font-size: 1.2em;
 	line-height: 1.6em;
 }
 
 article {
-	font-family: 'QuattrocentoSans';
+	font-family: 'QuattrocentoSans', sans-serif;
 	//width: 780px;
 	margin: 0 auto;
 	margin-top: 2em;
@@ -194,7 +194,7 @@ article {
 }
 
 article h1 {
-	font-family: 'LibreBaskerville';
+	font-family: 'LibreBaskerville', serif;
 	font-weight: bold;
 	color: #000000;
 	
@@ -213,7 +213,7 @@ article h1:first-letter {
 
 article p {
 	text-align: justify;
-	font-family: 'LibreCaslon';
+	font-family: 'LibreCaslon', serif;
 	background-color: #531D1D;
 	//background-color: black;
 	padding: 0% 4.3% 0% 4.3%;
@@ -233,7 +233,7 @@ article p b {
 }
 
 article h2 {
-	font-family: 'LibreCaslon';
+	font-family: 'LibreCaslon', serif;
 	padding: 3% 4.3% 1% 4.3%;
 	margin: 0;
 }

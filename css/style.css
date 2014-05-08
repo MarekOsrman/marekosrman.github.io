@@ -78,12 +78,10 @@ nav a p {
 	font-size: 0.7em;
 	text-transform: none;
 	padding: 8% 0 3% 0;
-	//display: none;
 }
 
 nav a:hover {
 	background-color: #541D1D;
-	//background-color: black;
 	color: white;
 }
 
@@ -110,20 +108,16 @@ section {
 	margin: 0 auto;
 	background-color: #000000;
 	padding: 2em 0 5em 0;
-	border: 0px solid;
-	//border-radius: 0px 0px 20px 20px;
 }
 
 section a {
+	display: block;
 	position:relative;
+	margin: 2em auto 0 auto;
+	padding: 0;
+	background-color: #531D1D;
 	text-decoration: none;
 	font-family: 'QuattrocentoSans', sans-serif;
-	margin: 0 auto;
-	margin-top: 2em;
-	border: 0px solid;
-	background-color: #531D1D;
-	padding: 0 0 0% 0;
-	display: block;
 }
 
 section a:hover {
@@ -131,6 +125,12 @@ section a:hover {
 }
 section a:hover p {
 	color: #444444;
+}
+
+section a aside {
+	display: none;
+	font-size: 2.5em;
+	color: white;
 }
 
 section a:hover aside {
@@ -146,12 +146,6 @@ section a:hover aside {
 	height: 30%;
 }
 
-section a aside {
-	display: none;
-	font-size: 2.5em;
-	color: white;
-}
-
 section a h1 {
 	font-family: 'LibreBaskerville', serif;
 	font-weight: bold;
@@ -165,68 +159,68 @@ section a h1:first-letter {
 	font-size: 3.2em;
 	padding: 0 0 0 0;
 	color: black;
-	margin: -0.01em 0em -0.1em 0.2em;
+	margin: -4% 0 -6% 5%;
 }
 
 section a p {
 	color: white;
 	text-align: justify;
 	font-family: 'LibreCaslon', serif;
-	padding: 0% 4.3% 0% 4.3%;
+	padding: 0.2% 5% 0% 5%;
 	font-size: 1.2em;
 	line-height: 1.6em;
 }
 
 article {
 	font-family: 'QuattrocentoSans', sans-serif;
-	//width: 780px;
-	margin: 0 auto;
-	margin-top: 2em;
-	border: 0px solid;
-	//border-radius: 20px 20px 20px 20px;
+	margin: 2em auto 0 auto;
+	padding: 0;
 	background-color: #531D1D;
-	padding: 0 0 0% 0;
-	//min-height: 6em;
 }
 
 article h1 {
 	font-family: 'LibreBaskerville', serif;
 	font-weight: bold;
 	color: #000000;
-	
 	font-size: 3em;
 	margin: 0 0 -0.13em 0;
-	//line-height: 1.15em;
 }
 
 article h1:first-letter {
 	float: left;
 	font-size: 3.2em;
-	padding: 0 0 0 0;
+	padding: 0;
 	color: black;
-	margin: -0.01em 0em -0.1em 0.2em;
+	//margin: -0.01em 0em -0.1em 0.2em;
+	//margin: -0.21em 0em -0.3em 0.2em;
+	margin: -4% 0 -6% 5%;
 }
 
 article p {
-	text-align: justify;
 	font-family: 'LibreCaslon', serif;
-	background-color: #531D1D;
-	//background-color: black;
-	padding: 0% 4.3% 0% 4.3%;
-	//margin: 0 0 0 4em;
-	//border: 0px solid;
-	//border-radius: 0px 0px 20px 20px;
 	font-size: 1.2em;
+	text-align: justify;
 	line-height: 1.6em;
+	background-color: #531D1D;
+	//padding: 0em 4.3% 0% 4.3%;
+	//padding: 0.1em 4.3% 0% 4.3%;
+	padding: 0.2% 5% 0% 5%;
 }
 
-article p b {
-	//background-color: #371212;
-	//padding: 0.1em 0.1em 0.1em 0.1em;
-	//border: 1px solid white;
-	//border-style: none none dashed none;
-	//text-decoration: underline;
+/* Sorry Firefox, but you have very unique margin/padding rendering
+	I will probably go to CSS hell for this ...
+*/
+@-moz-document url-prefix() {
+	article h1:first-letter {
+		margin-top: 0;
+		margin-bottom: -3%;
+	}
+	section a h1:first-letter {
+		margin-top: 0;
+		margin-bottom: -3%;
+	}	
 }
+
 
 article h2 {
 	font-family: 'LibreCaslon', serif;
@@ -253,6 +247,6 @@ article a:hover {
 
 footer {
 	width: 800px;
-	margin: 0 auto 0% auto;
+	margin: 0 auto 0 auto;
 	text-align: center;
 }

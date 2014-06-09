@@ -75,9 +75,14 @@ nav a {
 	font-size: 1.8em;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 0.5% 1% 0 1%;
-	margin: 0 auto;
-	display: block;
+	padding: 0.5% 2% 0 2%;
+	margin: 0 0 0 -0.5%;
+	display: inline-block;
+	//width: 180px;
+	
+	//margin: 0 auto;
+	//display: block;
+	
 }
 
 nav a p {
@@ -244,18 +249,42 @@ article p {
 	}
 }
 
-article p b {
-	//background-color: #371212;
-	//padding: 0.1em 0.1em 0.1em 0.1em;
-	//border: 1px solid white;
-	//border-style: none none dashed none;
-	//text-decoration: underline;
+
+article a {
+	color: #AAAAAA;
+	font-family: 'LibreCaslon', serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	border: 1px solid #AAAAAA;
+	border-style: none none solid none;	
+}
+
+article a:hover {
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-style: none none solid none;	
 }
 
 article h2 {
 	font-family: 'LibreCaslon', serif;
 	padding: 3% 4.3% 1% 4.3%;
 	margin: 0;
+}
+
+table {
+	font-family: 'LibreCaslon', serif;
+	padding: 0.2% 5% 0% 5%;
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+
+table td {
+	min-width: 180px;
+	border: 2px solid #371212;
+	border-style: solid none none none;
+	vertical-align: top;
 }
 
 footer {

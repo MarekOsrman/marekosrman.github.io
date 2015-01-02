@@ -108,24 +108,30 @@ article > p > a {
 /* Wine palette: 541D1D 371212 777777 AAAAAA FFFFFF 000000 */
 
 
-body,
+body {
+	background-color: #010000;
+	color: #000000;
+}
 header,
 nav,
-section,
-article {
-	background-color: #E7E8D1;
-	color: #000000;
+section {
+	background-color: #000000;
+	color: #D3CEAA;
+}
+article{
+	background-color: #010000;
+	color: #D3CEAA;
 }
 nav > a,
 nav > a > .nav_under {
-	color: #600000;
+	color: #9B96A3;
 }
 .full-line,
 nav > a:hover,
 nav > a:hover > .nav_under,
 nav > a:focus,
 nav > a:focus > .nav_under {
-	background-color: #600000;
+	background-color: #940315;
 	color: #FFFFFF;
 }
 section > a {
@@ -147,8 +153,7 @@ section > a > p {
 	color: #FFFFFF;
 }
 article > h1 {
-	background-color: #E7E8D1;
-	color: #000000;
+	color: #FBF7E4;
 }
 article > p > a, 
 footer > p > a {
@@ -167,7 +172,8 @@ footer > p > a:hover {
 
 header,
 nav,
-section {
+section,
+footer {
 	width: 800px;
 	margin: 0 auto;
 }
@@ -188,7 +194,7 @@ header {
 }
 
 header > h1 {
-	font-size: 3.8em;
+	font-size: 2.8em;
 	font-weight: normal;
 }
 
@@ -212,14 +218,14 @@ nav > a {
 	padding: 0.5% 1% 0 1%;
 	margin: 0 0 0 -0.5%;
 	display: inline-block;
-	width: 18%;
+	width: 130px;
 }
 
 nav > a > .nav_under {
 	display: block;
 	font-size: 0.7em;
 	text-transform: lowercase;
-	padding: 8% 0 2.5% 0;
+	padding: 8% 0 3% 0;
 }
 
 .full-line {
@@ -293,7 +299,6 @@ section > a > p {
 
 article {
 	margin: 2em auto 0 auto;
-	border-left: 3em solid #600000;
 }
 
 article > h1 {
@@ -302,12 +307,15 @@ article > h1 {
 	//margin: 0 0 -0.13em 0;
 	padding-top: 0.8%;
 	margin-bottom: -0%;
-	//line-height: 0.69em;
 }
 
 article > h1:first-letter {
-	font-size: 1em;
-	margin-left: 2%;
+	float: left;
+	font-size: 3.2em;
+	padding: 0;
+	//margin: -0.01em 0em -0.1em 0.2em;
+	//margin: -0.21em 0em -0.3em 0.2em;
+	margin: -1% 0 -1% 5%;
 }
 
 article > p {
@@ -316,9 +324,23 @@ article > p {
 	line-height: 1.6em;
 	//padding: 0em 4.3% 0% 4.3%;
 	//padding: 0.1em 4.3% 0% 4.3%;
-	padding: 0.2% 8% 0% 2%;
+	padding: 0.2% 5% 0% 5%;
 }
 
+/* Sorry Firefox, but you have very unique margin/padding rendering
+	I will probably go to CSS hell for this ...
+
+@-moz-document url-prefix() {
+	article > h1:first-letter {
+		margin-top: 0;
+		margin-bottom: -3%;
+	}
+	section > a > h1:first-letter {
+		margin-top: 0;
+		margin-bottom: -3%;
+	}	
+}
+* */
 
 article > h2 {
 	font-size: 1.4em;
@@ -351,9 +373,4 @@ article > p > b {
 
 footer {
 	text-align: center;
-	width: 200px;
-	margin: 0 auto;
-	padding-top: 0.2em;
-	padding-bottom: 0.4em;
-	border-top: 0.3em solid #600000;
 }
